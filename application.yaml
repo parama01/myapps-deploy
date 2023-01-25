@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/parama01/myapps.git
+    repoURL: https://github.com/parama01/myapps-deploy.git
     targetRevision: HEAD
     path: dev
   destination:
