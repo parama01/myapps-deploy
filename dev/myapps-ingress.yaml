@@ -16,4 +16,4 @@ spec:
         service:
           name: node-app-service
           port:
-            number: 8080
+            number: 3000
