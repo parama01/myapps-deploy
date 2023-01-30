@@ -18,7 +18,7 @@ spec:
       terminationGracePeriodSeconds: 60
       containers:
       - name: node-app
-        image: paramahub/myapps:10
+        image: paramahub/nodejs-dev:latest
         imagePullPolicy: "Always"
         lifecycle:
           preStop:
@@ -28,7 +28,7 @@ spec:
                 - '-c'
                 - sleep 10s
         ports:
-          - containerPort: 8080
+          - containerPort: 3000
         resources:
           requests:
             memory: "64Mi"
@@ -51,7 +51,7 @@ spec:
   type: ClusterIP
   ports:
   - protocol: TCP
-    port: 8080
+    port: 3000
 
 ---
 apiVersion: autoscaling/v2
